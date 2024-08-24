@@ -10,7 +10,6 @@ var permute = function (nums) {
             res.push(path.slice());
             return;
         }
-
         for (let num of nums) {
             if (path.includes(num)) {
                 continue;
