@@ -18,4 +18,4 @@ var buildTree = function (preorder, inorder) {
     root.right = buildTree(preorder.slice(mid + 1), inorder.slice(mid + 1));
     return root;
 
-};
+};  
