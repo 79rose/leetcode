@@ -14,4 +14,5 @@ var lengthOfLIS = function (nums) {
         }
         max = Math.max(max, dp[i]);
     }
+    return max;
 };

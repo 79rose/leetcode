@@ -12,4 +12,7 @@ var climbStairs = function (n) {
         pre = temp;
     }
     return cur;
+    // if (n <= 0) return 0;
+    // if (n <= 2) return n;
+    // return climbStairs(n - 1) + climbStairs(n - 2);
 };
