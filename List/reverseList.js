@@ -29,3 +29,21 @@ var reverseList = function (head) {
     head.next = null;
     return newHead;
 };
+
+// 反转链表2：反转从位置 m 到 n 的链表。 不使用递归
+var reverseBetween = function (head, m, n) {
+    let dummy = new ListNode(0);
+    dummy.next = head;
+    let pre = dummy;
+    for (let i = 0; i < m - 1; i++) {
+        pre = pre.next;
+    }
+    let cur = pre.next;
+    for (let i = m; i < n; i++) {
+        const next = cur.next;
+        cur.next = next.next;
+        next.next = pre.next;
+        pre.next = next;
+    }
+    return dummy.next;
+}

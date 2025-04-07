@@ -9,7 +9,7 @@ var lengthOfLIS = function (nums) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = 0; j < i; j++) {
             if (nums[i] > nums[j]) {
-                dp[i] = Math.max(dp[i], dp[j] + 1);
+                dp[i] = Math.max(dp[i], dp[j] + 1); // dp[i] 表示以 nums[i] 结尾的最长上升子序列的长度
             }
         }
         max = Math.max(max, dp[i]);

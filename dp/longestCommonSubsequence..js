@@ -13,7 +13,7 @@ var longestCommonSubsequence = function (text1, text2) {
             if (text1[i - 1] === text2[j - 1]) {
                 dp[i][j] = dp[i - 1][j - 1] + 1;
             } else {
-                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]); 
             }
         }
     }

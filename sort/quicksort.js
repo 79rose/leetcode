@@ -1,5 +1,5 @@
 /**
- * @description 快速排序
+ * @description 快速排序 复杂度O(nlogn)
  */
 function quickSort(arr) {
     if (arr.length <= 1) return arr;

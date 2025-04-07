@@ -1,5 +1,5 @@
 /**
- * 选择排序
+ * 选择排序 复杂度O(n^2)
  */
 function pickSort(arr) {
     let len = arr.length;
@@ -14,3 +14,4 @@ function pickSort(arr) {
     }
     return arr;
 }
+

@@ -12,7 +12,7 @@ var numIslands = function (grid) {
         grid[i][j] = '2'; // 插旗！避免来回横跳无限递归
         dfs(i, j - 1); // 往左走
         dfs(i, j + 1); // 往右走
-        dfs(i - 1, j); // 往上走
+        dfs(i - 1, j); // 往上走 
         dfs(i + 1, j); // 往下走
     }
 

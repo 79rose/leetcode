@@ -4,7 +4,7 @@
 //  * @return {number}
 //  */
 // var findKthLargest = function (nums, k) {
-//     // func 1： 快速排序 复杂度：O(nlogn)
+//     // func 1： 快速排序 
 //     const fastSort = (arr) => {
 //         if (arr.length <= 1) return arr;
 //         const pivot = arr[0];

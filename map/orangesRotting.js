@@ -20,8 +20,8 @@ var orangesRotting = function (grid) {
         }
     }
 
-    while (freshOranges > 0 && rottenOranges.length > 0) {
 
+    while (freshOranges > 0 && rottenOranges.length > 0) {
         let newRottenOranges = [];
 
         for (let rottenOrange of rottenOranges) {

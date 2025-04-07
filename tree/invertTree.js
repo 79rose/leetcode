@@ -19,3 +19,18 @@ var invertTree = function (root) {
     root.right = left;
     return root;
 };
+
+var invertTree = function (root) {
+    // 迭代解法
+    if (!root) return null;
+    const queue = [root];
+    while (queue.length) {
+        const cur = queue.shift();
+        const left = cur.left;
+        cur.left = cur.right;
+        cur.right = left;
+        if (cur.left) queue.push(cur.left);
+        if (cur.right) queue.push(cur.right);
+    }
+    return root;
+}

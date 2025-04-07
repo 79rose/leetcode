@@ -21,3 +21,20 @@ var inorderTraversal = function (root) {
     midlleOrder(root);
     return res;
 };
+
+var inorderTraversal = function (root) {
+    // 迭代解法
+    const res = [];
+    const stack = [];
+    while (root || stack.length) {
+        while (root) {
+            stack.push(root);
+            root = root.left;
+        }
+        root = stack.pop();
+        res.push(root.val);
+        root = root.right;
+    }
+    return res;
+}
+
